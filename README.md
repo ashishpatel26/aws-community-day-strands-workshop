@@ -1,7 +1,7 @@
 # Strands Agents Workshop — AWS Community Day Edition
 
 [![Python](https://img.shields.io/badge/python-3.14%2B-blue)](https://www.python.org/)
-[![uv](https://img.shields.io/badge/managed%20with-uv-8A2BE2)](https://docs.astral.sh/uv/)
+[![uv](<https://img.shields.io/badge/managed%20with-uv-8A2BE2>)](https://docs.astral.sh/uv/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A hands-on, 4-hour Strands Agents workshop. Build agents locally with Ollama, fall back to Amazon Bedrock with a one-line swap — same agent code either way.
@@ -76,17 +76,17 @@ One Agent Loop at the center. Everything else — tools, models, state, multi-ag
 
 ## What's inside
 
-| Stage | Folder | Teaches |
-|---|---|---|
-| 1 | [`workshop/01-quickstart/`](workshop/01-quickstart/) | Agent/model/tools shape |
-| 2 | [`workshop/02-agent-loop/`](workshop/02-agent-loop/) | The agent loop itself |
-| 3 | [`workshop/03-tools/`](workshop/03-tools/) | Custom, vended, and agent-as-tool patterns |
-| 4 | [`workshop/04-model-providers/`](workshop/04-model-providers/) | Concept only — no script, proven live in stage 8 |
-| 5 | [`workshop/05-state-memory/`](workshop/05-state-memory/) | Session state vs. long-term memory (mem0) |
-| 6 | [`workshop/06-mcp/`](workshop/06-mcp/) | MCP server / client |
-| 7 | [`workshop/07-multi-agent/`](workshop/07-multi-agent/) | Workflow, Graph, Swarm |
-| 8 | [`workshop/08-production/`](workshop/08-production/) | Deployment, meta-tooling, vision, Bedrock swap |
-| 9 | [`workshop/09-advanced/`](workshop/09-advanced/) | Hooks, observability, evaluation, A2A (guardrails: reference only) |
+| Stage | Folder                                                          | Teaches                                                            |
+| ----- | --------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 1     | [`workshop/01-quickstart/`](workshop/01-quickstart/)           | Agent/model/tools shape                                            |
+| 2     | [`workshop/02-agent-loop/`](workshop/02-agent-loop/)           | The agent loop itself                                              |
+| 3     | [`workshop/03-tools/`](workshop/03-tools/)                     | Custom, vended, and agent-as-tool patterns                         |
+| 4     | [`workshop/04-model-providers/`](workshop/04-model-providers/) | Concept only — no script, proven live in stage 8                  |
+| 5     | [`workshop/05-state-memory/`](workshop/05-state-memory/)       | Session state vs. long-term memory (mem0)                          |
+| 6     | [`workshop/06-mcp/`](workshop/06-mcp/)                         | MCP server / client                                                |
+| 7     | [`workshop/07-multi-agent/`](workshop/07-multi-agent/)         | Workflow, Graph, Swarm                                             |
+| 8     | [`workshop/08-production/`](workshop/08-production/)           | Deployment, meta-tooling, vision, Bedrock swap                     |
+| 9     | [`workshop/09-advanced/`](workshop/09-advanced/)               | Hooks, observability, evaluation, A2A (guardrails: reference only) |
 
 ## Full facilitator guides
 
@@ -99,8 +99,22 @@ This README is the front door. The guides above are where the actual teaching co
 
 ## Prerequisites
 
-- [`uv`](https://docs.astral.sh/uv/) — Python package manager
-- [Ollama](https://ollama.ai) — local model runtime
+- **[`uv`](https://docs.astral.sh/uv/)** — Python package manager
+  ```bash
+  # macOS / Linux
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+
+  # Windows (PowerShell)
+  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+  ```
+  Verify: `uv --version`
+
+- **[Ollama](https://ollama.ai)** — local model runtime. Download the installer for your OS from [ollama.ai](https://ollama.ai), or on macOS/Linux:
+  ```bash
+  curl -fsSL https://ollama.ai/install.sh | sh
+  ```
+  Verify: `ollama --version`, then pull the models used in this workshop (see [Quickstart](#quickstart)).
+
 - Optional: an AWS account for the Bedrock fallback path — see [`aws_cli_setup_configuration_guide.md`](aws_cli_setup_configuration_guide.md)
 
 ## Known issues
