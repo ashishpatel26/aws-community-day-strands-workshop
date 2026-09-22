@@ -1,7 +1,11 @@
 # Strands Agents Workshop — AWS Community Day Edition
 
+[![CI](https://github.com/ashishpatel26/aws-community-day-strands-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/ashishpatel26/aws-community-day-strands-workshop/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.14%2B-blue)](https://www.python.org/)
-[![uv](<https://img.shields.io/badge/managed%20with-uv-8A2BE2>)](https://docs.astral.sh/uv/)
+[![uv](https://img.shields.io/badge/managed%20with-uv-8A2BE2)](https://docs.astral.sh/uv/)
+[![Strands Agents](https://img.shields.io/badge/Strands-Agents-orange)](https://strandsagents.com/)
+[![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com/bedrock/)
+[![Ollama](https://img.shields.io/badge/Ollama-local%20first-000000?logo=ollama&logoColor=white)](https://ollama.ai)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A hands-on, 4-hour Strands Agents workshop. Build agents locally with Ollama, fall back to Amazon Bedrock with a one-line swap — same agent code either way.
