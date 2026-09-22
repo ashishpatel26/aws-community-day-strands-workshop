@@ -32,6 +32,13 @@ Every script under `workshop/` imports a shared model resolver — Ollama first,
 
 **Minimum hardware:** 8GB RAM, GPU strongly preferred (`qwen3.5:4b` fits fully on most consumer GPUs; CPU-only works but is slower).
 
+### mem0 (long-term memory demo)
+
+[`workshop/05-state-memory/2-memory_agent.py`](workshop/05-state-memory/2-memory_agent.py) uses [mem0](https://github.com/mem0ai/mem0) with a local FAISS vector store — no separate install or API key needed, `mem0ai` and `faiss-cpu` are already pulled in by `uv sync`. Two things to know before running it:
+
+- It needs `nomic-embed-text` pulled (covered above) — mem0's embedder is pinned to it directly, bypassing `strands_tools`' packaged mem0 tool (see the script's docstring for why: a hardcoded embedding-dimension mismatch in that packaged tool).
+- First run creates `mem0_data/faiss/` in the repo root to persist vectors across runs — already gitignored, safe to delete to reset memory.
+
 ---
 
 ## Architecture

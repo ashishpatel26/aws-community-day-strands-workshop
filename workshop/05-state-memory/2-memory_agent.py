@@ -1,5 +1,5 @@
 """Memory Agent (mem0) example — persistent memory across conversations.
-Chat agent: Bedrock primary, Ollama fallback (via model_provider). mem0's
+Chat agent: Ollama primary, Bedrock fallback (via model_provider). mem0's
 own internal LLM/embedder stay pinned to local Ollama regardless — mem0 has
 no Bedrock provider wired up here, and this keeps memory storage working
 offline even when the chat model itself is cloud-backed.
