@@ -104,7 +104,7 @@ Run each script from inside its own folder, some write relative-path files
 like `tools/` or `mem0_data/`:
 ```
 workshop/
-  WORKSHOP.md                          this file
+  Readme.md                          this file
   model_provider.py                    shared: Ollama primary, Bedrock fallback
   test_model_provider.py               unit tests for the fallback logic
   01-quickstart/                       Stage 1 — Agent/model/tools shape

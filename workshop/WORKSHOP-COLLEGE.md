@@ -1,7 +1,7 @@
 # Strands Agents Workshop — College Edition
 **4 hours · 60-100 students · mixed Python/CS background · Ollama or Bedrock (student's choice)**
 
-Adapted from `WORKSHOP.md` (AWS Community Day version). Same repo/scripts,
+Adapted from `Readme.md` (AWS Community Day version). Same repo/scripts,
 different pacing, more scaffolding, more TA support. Read the original's
 "Known Issues" section too — those landmines still apply.
 
@@ -62,7 +62,7 @@ awkward pairing-up time on the day.
 ## Room logistics (60-100 people)
 
 - **TAs: 4-6**, roaming, not at a fixed desk. Give each a laminated card of
-  the "Known Issues" section from `WORKSHOP.md` — most questions repeat.
+  the "Known Issues" section from `Readme.md` — most questions repeat.
 - **Seating**: pairs at each table/bench if possible; one laptop can be the
   "driver," swap roles between Module 2 and Module 3.
 - **A visible progress signal**: sticky notes (green = working, red = stuck)

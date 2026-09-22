@@ -179,7 +179,7 @@ download). For a 30-person room each running a few agent calls during a
 - [ ] Confirm `aws sts get-caller-identity` works on the demo machine morning-of
 - [ ] Re-run `aws bedrock list-foundation-models --region ap-south-1` morning-of
       — confirms account verification hasn't regressed (it has bitten us once
-      already during dev, see WORKSHOP.md known issues)
+      already during dev, see Readme.md known issues)
 - [ ] Confirm Anthropic "use case details" banner is cleared on demo account
 - [ ] Decide: give students a shared read-only Bedrock demo credential, or
       have each set up their own IAM user beforehand (shared is faster for a

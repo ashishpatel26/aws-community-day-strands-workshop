@@ -20,7 +20,10 @@ Nine stages, each a working script, each proving one architectural idea: the age
 uv sync
 ollama pull qwen3.5:4b
 ollama pull nomic-embed-text
+uv run 0-verify_setup.py
 ```
+
+`0-verify_setup.py` confirms strands imports, a model is reachable, and a trivial agent call round-trips — catches setup problems before you're mid-demo.
 
 Then run any stage from the repo root:
 
@@ -101,7 +104,7 @@ One Agent Loop at the center. Everything else — tools, models, state, multi-ag
 
 ## Full facilitator guides
 
-- [`workshop/WORKSHOP.md`](workshop/WORKSHOP.md) — the complete 4-hour AWS Community Day guide: per-module timing, the 5-Questions teaching framework, live-demo scripts, and known landmines.
+- [`workshop/Readme.md`](workshop/Readme.md) — the complete 4-hour AWS Community Day guide: per-module timing, the 5-Questions teaching framework, live-demo scripts, and known landmines.
 - [`workshop/WORKSHOP-COLLEGE.md`](workshop/WORKSHOP-COLLEGE.md) — adapted variant for 60–100 college students: more scaffolding, TA support, adjusted pacing.
 
 This README is the front door. The guides above are where the actual teaching content lives.
@@ -155,7 +158,7 @@ For the Bedrock fallback path only — see [`aws_cli_setup_configuration_guide.m
 
 ## Known issues
 
-See [`workshop/WORKSHOP.md`](workshop/WORKSHOP.md#known-issues--live-demo-landmines-read-before-you-go-live) for the full list of live-demo landmines (Bedrock access status, Windows-specific tool caveats, mem0 config notes) before presenting.
+See [`workshop/Readme.md`](workshop/Readme.md#known-issues--live-demo-landmines-read-before-you-go-live) for the full list of live-demo landmines (Bedrock access status, Windows-specific tool caveats, mem0 config notes) before presenting.
 
 ## License
 
