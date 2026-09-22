@@ -103,23 +103,48 @@ This README is the front door. The guides above are where the actual teaching co
 
 ## Prerequisites
 
-- **[`uv`](https://docs.astral.sh/uv/)** — Python package manager
-  ```bash
-  # macOS / Linux
-  curl -LsSf https://astral.sh/uv/install.sh | sh
+### 1. Install `uv`
 
-  # Windows (PowerShell)
-  powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-  ```
-  Verify: `uv --version`
+[`uv`](https://docs.astral.sh/uv/) is the Python package manager this workshop uses — full official instructions at [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/).
 
-- **[Ollama](https://ollama.ai)** — local model runtime. Download the installer for your OS from [ollama.ai](https://ollama.ai), or on macOS/Linux:
-  ```bash
-  curl -fsSL https://ollama.ai/install.sh | sh
-  ```
-  Verify: `ollama --version`, then pull the models used in this workshop (see [Quickstart](#quickstart)).
+**macOS / Linux:**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
-- Optional: an AWS account for the Bedrock fallback path — see [`aws_cli_setup_configuration_guide.md`](aws_cli_setup_configuration_guide.md)
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Verify: `uv --version`
+
+### 2. Install Ollama
+
+[Ollama](https://ollama.ai) runs the local model this workshop uses by default — full official instructions and installers at [ollama.com/download](https://ollama.com/download).
+
+**macOS:**
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+Or download the `.dmg` from [ollama.com/download](https://ollama.com/download) (requires macOS 14 Sonoma or later).
+
+**Linux:**
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+**Windows (PowerShell):**
+```powershell
+irm https://ollama.com/install.ps1 | iex
+```
+Or download the installer from [ollama.com/download/windows](https://ollama.com/download/windows) (requires Windows 10 or later).
+
+Verify: `ollama --version`, then pull the models used in this workshop (see [Quickstart](#quickstart)).
+
+### 3. Optional — AWS account
+
+For the Bedrock fallback path only — see [`aws_cli_setup_configuration_guide.md`](aws_cli_setup_configuration_guide.md).
 
 ## Known issues
 
