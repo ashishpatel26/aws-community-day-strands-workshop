@@ -1,0 +1,33 @@
+[project]
+name = "aws-community-day-strands-workshop"
+version = "0.1.0"
+description = "Hands-on Strands Agents workshop — AWS Community Day edition"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "boto3>=1.43.98",
+    "faiss-cpu>=1.15.1",
+    "mcp<2",
+    "mem0ai<2.0",
+    "ollama>=0.6.2",
+    "strands-agents[a2a]>=1.56.0",
+    "strands-agents-tools>=0.8.9",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.8.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# BLE001 (blind except) disabled: model_provider.get_model() intentionally
+# catches broad exceptions to fall back from Ollama to Bedrock — any
+# failure mode there should trigger the fallback, not just specific ones.
+ignore = ["BLE001"]
+
+[tool.pytest.ini_options]
+testpaths = ["workshop"]

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+mem0_data/
+tools/
+.playwright-mcp/
+*.egg-info/
+.env
+.kilo/
+.remember/
+*.pdf
