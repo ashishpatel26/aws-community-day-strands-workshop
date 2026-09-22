@@ -147,12 +147,12 @@ CLI config (`~/.aws/credentials`) automatically, same as any boto3 client.
 
 ## 6. Live demo script
 
-Use `01-fundamentals/2-weather_forecaster.py` for the live swap demo — it's
+Use `02-agent-loop/1-weather_forecaster.py` for the live swap demo — it's
 the simplest single-agent script, easiest to follow the diff live.
 
 1. Show it running against Ollama (already works from Module 1).
 2. Open the file, swap the two lines above.
-3. Re-run: `uv run 2-weather_forecaster.py`
+3. Re-run: `uv run 1-weather_forecaster.py`
 4. Same output, different backend — that's the whole point.
 
 ---

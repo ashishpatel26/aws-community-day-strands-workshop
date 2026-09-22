@@ -99,7 +99,7 @@ where mixed-skill students actually build confidence.
 
 ### Module 1 — Fundamentals (50 min, was 45)
 Same content as pro version (`1-structured_output.py`,
-`2-weather_forecaster.py`) but:
+`1-weather_forecaster.py`) but:
 - **[+5min] Concept**: add "what is an API/HTTP request" before the weather
   demo — pro audience skips this, students may not have it.
 - Exercise: pair up, one drives. Both must be able to explain what changed
