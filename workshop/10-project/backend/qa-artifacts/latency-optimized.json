@@ -1,0 +1,87 @@
+{
+  "ticker": "MSFT",
+  "model": "qwen3.5:4b",
+  "elapsed_s": 21.249,
+  "status": "completed",
+  "events": [
+    {
+      "agent": "orchestrator",
+      "status": "started",
+      "elapsed_s": 0.003
+    },
+    {
+      "agent": "company_strategist",
+      "status": "started",
+      "elapsed_s": 1.974
+    },
+    {
+      "agent": "financial_analyst",
+      "status": "started",
+      "elapsed_s": 2.221
+    },
+    {
+      "agent": "market_analyst",
+      "status": "started",
+      "elapsed_s": 2.246
+    },
+    {
+      "agent": "financial_analyst",
+      "status": "completed",
+      "elapsed_s": 6.99
+    },
+    {
+      "agent": "company_strategist",
+      "status": "completed",
+      "elapsed_s": 10.812
+    },
+    {
+      "agent": "market_analyst",
+      "status": "completed",
+      "elapsed_s": 15.137
+    },
+    {
+      "agent": "orchestrator",
+      "status": "started",
+      "elapsed_s": 15.137
+    },
+    {
+      "agent": "orchestrator",
+      "status": "completed",
+      "elapsed_s": 21.246
+    }
+  ],
+  "model_calls": [
+    {
+      "elapsed_s": 4.765,
+      "inputTokens": 273,
+      "outputTokens": 163,
+      "totalTokens": 436
+    },
+    {
+      "elapsed_s": 8.834,
+      "inputTokens": 564,
+      "outputTokens": 153,
+      "totalTokens": 717
+    },
+    {
+      "elapsed_s": 12.889,
+      "inputTokens": 262,
+      "outputTokens": 159,
+      "totalTokens": 421
+    },
+    {
+      "elapsed_s": 6.105,
+      "inputTokens": 773,
+      "outputTokens": 209,
+      "totalTokens": 982
+    }
+  ],
+  "section_characters": {
+    "company_overview": 874,
+    "stock_price_analysis": 322,
+    "financial_health": 736,
+    "market_sentiment": 832,
+    "integrated_insights": 1102
+  },
+  "error": null
+}

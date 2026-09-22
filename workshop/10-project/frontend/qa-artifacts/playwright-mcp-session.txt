@@ -1,0 +1,125 @@
+### Ran Playwright code
+```js
+await page.goto('http://127.0.0.1:5173');
+```
+### Page
+- Page URL: http://127.0.0.1:5173/
+- Page Title: Swarm — Finance Research Workspace
+### Snapshot
+- [Snapshot](test-results/mcp/page-2026-09-22T12-16-59-816Z.yml)
+### Events
+- New console entries: test-results/mcp/console-2026-09-22T12-16-59-105Z.log#L1
+### Result
+- [Screenshot of full page](qa-artifacts/login-desktop.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as qa-artifacts/login-desktop.png
+await page.screenshot({
+  fullPage: true,
+  path: 'qa-artifacts/login-desktop.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Ran Playwright code
+```js
+await page.setViewportSize({ width: 390, height: 844 });
+```
+### Result
+- [Screenshot of full page](qa-artifacts/login-mobile.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as qa-artifacts/login-mobile.png
+await page.screenshot({
+  fullPage: true,
+  path: 'qa-artifacts/login-mobile.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Ran Playwright code
+```js
+await page.setViewportSize({ width: 1440, height: 1000 });
+```
+### Ran Playwright code
+```js
+await page.locator('button:has-text("Explore sample workspace")').click();
+```
+### Page
+- Page URL: http://127.0.0.1:5173/
+- Page Title: Swarm — Finance Research Workspace
+### Snapshot
+- [Snapshot](test-results/mcp/page-2026-09-22T12-17-02-530Z.yml)
+### Result
+- [Screenshot of full page](qa-artifacts/workspace-desktop.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as qa-artifacts/workspace-desktop.png
+await page.screenshot({
+  fullPage: true,
+  path: 'qa-artifacts/workspace-desktop.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Ran Playwright code
+```js
+await page.locator('button:has-text("Explore sample report")').click();
+```
+### Page
+- Page URL: http://127.0.0.1:5173/
+- Page Title: Swarm — Finance Research Workspace
+### Snapshot
+- [Snapshot](test-results/mcp/page-2026-09-22T12-17-04-838Z.yml)
+### Result
+- [Screenshot of full page](qa-artifacts/report-desktop.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as qa-artifacts/report-desktop.png
+await page.screenshot({
+  fullPage: true,
+  path: 'qa-artifacts/report-desktop.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Ran Playwright code
+```js
+await page.setViewportSize({ width: 390, height: 844 });
+```
+### Result
+- [Screenshot of full page](qa-artifacts/report-mobile.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as qa-artifacts/report-mobile.png
+await page.screenshot({
+  fullPage: true,
+  path: 'qa-artifacts/report-mobile.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Ran Playwright code
+```js
+await page.locator('button:has-text("Back to workspace")').click();
+```
+### Page
+- Page URL: http://127.0.0.1:5173/
+- Page Title: Swarm — Finance Research Workspace
+### Snapshot
+- [Snapshot](test-results/mcp/page-2026-09-22T12-17-08-299Z.yml)
+### Result
+- [Screenshot of full page](qa-artifacts/workspace-mobile.png)
+### Ran Playwright code
+```js
+// Screenshot full page and save it as qa-artifacts/workspace-mobile.png
+await page.screenshot({
+  fullPage: true,
+  path: 'qa-artifacts/workspace-mobile.png',
+  scale: 'css',
+  type: 'png'
+});
+```
+### Result
+Total messages: 3 (Errors: 0, Warnings: 0)
+Returning 0 messages for level "error"

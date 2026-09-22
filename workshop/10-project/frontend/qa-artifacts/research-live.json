@@ -1,0 +1,56 @@
+{
+  "ticker": "MSFT",
+  "elapsedSeconds": 26.5506708,
+  "status": "completed",
+  "events": [
+    {
+      "type": "connected"
+    },
+    {
+      "agent": "orchestrator",
+      "status": "started",
+      "detail": "Gathering company data and headlines"
+    },
+    {
+      "agent": "company_strategist",
+      "status": "started",
+      "detail": "Reviewing source data"
+    },
+    {
+      "agent": "financial_analyst",
+      "status": "started",
+      "detail": "Reviewing source data"
+    },
+    {
+      "agent": "market_analyst",
+      "status": "started",
+      "detail": "Reviewing source data"
+    },
+    {
+      "agent": "financial_analyst",
+      "status": "completed",
+      "detail": "Completed in 5.2s"
+    },
+    {
+      "agent": "company_strategist",
+      "status": "completed",
+      "detail": "Completed in 10.0s"
+    },
+    {
+      "agent": "market_analyst",
+      "status": "completed",
+      "detail": "Completed in 14.3s"
+    },
+    {
+      "agent": "orchestrator",
+      "status": "started",
+      "detail": "Combining the specialists' findings"
+    },
+    {
+      "agent": "orchestrator",
+      "status": "completed",
+      "detail": "Report ready."
+    }
+  ],
+  "browserErrors": []
+}

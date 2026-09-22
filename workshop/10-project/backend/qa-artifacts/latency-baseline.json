@@ -1,0 +1,108 @@
+{
+  "ticker": "MSFT",
+  "elapsed_s": 217.426,
+  "status": "completed",
+  "events": [
+    {
+      "agent": "orchestrator",
+      "status": "started",
+      "elapsed_s": 0.0
+    },
+    {
+      "agent": "orchestrator",
+      "status": "completed",
+      "elapsed_s": 9.397
+    },
+    {
+      "agent": "company_strategist",
+      "status": "started",
+      "elapsed_s": 9.397
+    },
+    {
+      "agent": "market_analyst",
+      "status": "completed",
+      "elapsed_s": 217.425
+    },
+    {
+      "agent": "orchestrator",
+      "status": "completed",
+      "elapsed_s": 217.426
+    }
+  ],
+  "model_calls": [
+    {
+      "elapsed_s": 2.795,
+      "inputTokens": 329,
+      "outputTokens": 85,
+      "totalTokens": 414
+    },
+    {
+      "elapsed_s": 5.755,
+      "inputTokens": 451,
+      "outputTokens": 226,
+      "totalTokens": 677
+    },
+    {
+      "elapsed_s": 4.739,
+      "inputTokens": 569,
+      "outputTokens": 159,
+      "totalTokens": 728
+    },
+    {
+      "elapsed_s": 10.067,
+      "inputTokens": 1017,
+      "outputTokens": 378,
+      "totalTokens": 1395
+    },
+    {
+      "elapsed_s": 23.64,
+      "inputTokens": 1247,
+      "outputTokens": 535,
+      "totalTokens": 1782
+    },
+    {
+      "elapsed_s": 22.061,
+      "inputTokens": 1644,
+      "outputTokens": 370,
+      "totalTokens": 2014
+    },
+    {
+      "elapsed_s": 14.724,
+      "inputTokens": 736,
+      "outputTokens": 213,
+      "totalTokens": 949
+    },
+    {
+      "elapsed_s": 35.246,
+      "inputTokens": 876,
+      "outputTokens": 495,
+      "totalTokens": 1371
+    },
+    {
+      "elapsed_s": 23.117,
+      "inputTokens": 1309,
+      "outputTokens": 290,
+      "totalTokens": 1599
+    },
+    {
+      "elapsed_s": 21.47,
+      "inputTokens": 972,
+      "outputTokens": 276,
+      "totalTokens": 1248
+    },
+    {
+      "elapsed_s": 51.797,
+      "inputTokens": 1037,
+      "outputTokens": 672,
+      "totalTokens": 1709
+    }
+  ],
+  "section_characters": {
+    "company_overview": 1080,
+    "stock_price_analysis": 311,
+    "financial_health": 950,
+    "market_sentiment": 2321,
+    "integrated_insights": 2321
+  },
+  "error": null
+}

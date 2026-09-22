@@ -7,11 +7,14 @@ requires-python = ">=3.14"
 dependencies = [
     "boto3>=1.43.98",
     "faiss-cpu>=1.15.1",
+    "fastapi>=0.115.0",
     "mcp<2",
     "mem0ai<2.0",
     "ollama>=0.6.2",
     "strands-agents[a2a]>=1.56.0",
     "strands-agents-tools>=0.8.9",
+    "uvicorn[standard]>=0.32.0",
+    "yfinance>=0.2.51",
 ]
 
 [dependency-groups]
@@ -31,3 +34,7 @@ ignore = ["BLE001"]
 
 [tool.pytest.ini_options]
 testpaths = ["workshop"]
+# workshop/10-project/backend/*.py import sibling modules directly (agents,
+# auth, progress, schemas, tools) — same pattern the uvicorn --app-dir run
+# uses. rootdir insertion lets pytest find them without a package install.
+pythonpath = ["workshop/10-project/backend"]
