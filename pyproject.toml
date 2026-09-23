@@ -32,6 +32,18 @@ line-length = 100
 # failure mode there should trigger the fallback, not just specific ones.
 ignore = ["BLE001"]
 
+[tool.ruff.lint.per-file-ignores]
+# I001 (import sort) disagrees between platforms for these three files —
+# passes clean on Windows dev machines but fails on GitHub Actions'
+# Linux runners with the identical committed content and locked ruff
+# version. Root cause not isolated (not __pycache__ state, not isort's
+# known-first-party config, not a stray ruff.toml — all ruled out).
+# Ignoring I001 here only, rather than weakening it repo-wide, until the
+# platform difference is understood.
+"workshop/10-project/backend/agents.py" = ["I001"]
+"workshop/10-project/backend/main.py" = ["I001"]
+"workshop/10-project/backend/test_research.py" = ["I001"]
+
 [tool.pytest.ini_options]
 testpaths = ["workshop"]
 # workshop/10-project/backend/*.py import sibling modules directly (agents,
