@@ -10,7 +10,7 @@
 
 A hands-on, 4-hour Strands Agents workshop. Build agents locally with Ollama, fall back to Amazon Bedrock with a one-line swap — same agent code either way.
 
-Nine stages, each a working script, each proving one architectural idea: the agent loop, tools (custom/vended/MCP/agent-as-tool), state & memory, multi-agent patterns (Workflow/Graph/Swarm), and the production layer (hooks, observability, evaluation, A2A).
+Ten stages: nine working scripts, each proving one architectural idea — the agent loop, tools (custom/vended/MCP/agent-as-tool), state & memory, multi-agent patterns (Workflow/Graph/Swarm), and the production layer (hooks, observability, evaluation, A2A) — plus a full-stack capstone app.
 
 ---
 
@@ -101,6 +101,7 @@ One Agent Loop at the center. Everything else — tools, models, state, multi-ag
 | 7     | [`workshop/07-multi-agent/`](workshop/07-multi-agent/)         | Workflow, Graph, Swarm                                             |
 | 8     | [`workshop/08-production/`](workshop/08-production/)           | Deployment, meta-tooling, vision, Bedrock swap                     |
 | 9     | [`workshop/09-advanced/`](workshop/09-advanced/)               | Hooks, observability, evaluation, A2A (guardrails: reference only) |
+| 10    | [`workshop/10-project/`](workshop/10-project/)                 | Capstone: full-stack finance research portal (FastAPI + React)    |
 
 ## Full facilitator guides
 

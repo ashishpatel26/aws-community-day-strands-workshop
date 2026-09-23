@@ -16,4 +16,4 @@ jobs:
       # Only test_model_provider.py runs here — every other script under
       # workshop/ needs a live local Ollama model or AWS Bedrock access,
       # neither available on GitHub-hosted runners.
-      - run: uv run python -m pytest workshop/test_model_provider.py -v
+      - run: uv run python -m pytest workshop/test_model_provider.py workshop/10-project/backend/test_tools.py -v

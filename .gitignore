@@ -10,3 +10,7 @@ tools/
 .kilo/
 .remember/
 *.pdf
+node_modules/
+dist/
+playwright-report/
+test-results/
