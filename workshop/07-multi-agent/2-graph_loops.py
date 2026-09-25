@@ -16,6 +16,10 @@ from strands.types.content import ContentBlock
 
 model = get_model()
 
+# Extra headroom for writer/finalizer generations on local Ollama —
+# think mode is already disabled by default in model_provider.get_model().
+model.update_config(max_tokens=1024)
+
 writer = Agent(
     model=model,
     name="writer",
@@ -83,7 +87,7 @@ def build_graph():
     )
 
     builder.set_max_node_executions(6)
-    builder.set_execution_timeout(60)
+    builder.set_execution_timeout(300)  # local Ollama: 3+ sequential calls need real headroom, 60s was too tight
     builder.reset_on_revisit(True)
     builder.set_entry_point("writer")
     return builder.build()

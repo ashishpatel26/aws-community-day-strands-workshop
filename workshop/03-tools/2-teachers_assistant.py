@@ -10,7 +10,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from model_provider import get_model
 from strands import Agent, tool
-from strands_tools import calculator, editor, file_read, file_write, http_request
+from strands.vended_tools import http_request
+from strands_tools import calculator, editor, file_read, file_write
 
 # NOTE: strands_tools.shell / python_repl import POSIX-only `pty`/`fcntl`,
 # unavailable on Windows. Dropped from computer_science_assistant below.

@@ -2,6 +2,10 @@
 Ollama primary, Bedrock fallback. Uses mem0 (local FAISS, same store as
 2-memory_agent.py) — strands_tools.memory is deprecated upstream and its
 retrieve path returns nothing usable (silent failure, not an error).
+
+Routing is a plain string check, not a classifier LLM call — one fewer
+sequential model round-trip, matching 2-memory_agent.py's approach. The
+answerer Agent is built once and reused, not reconstructed per call.
 Run: uv run 1-knowledge_base_agent.py
 """
 
@@ -33,28 +37,25 @@ MEM0_CONFIG = {
 
 store = Memory.from_config(MEM0_CONFIG)
 
-ACTION_SYSTEM_PROMPT = """Classify the user's query as exactly one word: 'store' or
-'retrieve'. 'store' = user wants to save/remember information.
-'retrieve' = user is asking a question. Respond with only that one word."""
-
 ANSWER_SYSTEM_PROMPT = """Answer the user's question using ONLY the provided context.
 If the context doesn't contain the answer, say you don't know."""
 
+answerer = Agent(model=model, system_prompt=ANSWER_SYSTEM_PROMPT, callback_handler=None)
+
 
 def determine_action(query: str) -> str:
-    classifier = Agent(model=model, system_prompt=ACTION_SYSTEM_PROMPT, callback_handler=None)
-    return str(classifier(f"Query: {query}")).strip().lower()
+    """Plain string check, not a classifier LLM call — one fewer round-trip."""
+    return "store" if query.lower().startswith(("remember", "store", "note that")) else "retrieve"
 
 
 def handle_query(query: str) -> str:
     action = determine_action(query)
-    if "store" in action:
+    if action == "store":
         store.add(query, user_id="demo")
         return "Stored."
 
     results = store.search(query, user_id="demo", limit=5)
     retrieved = "\n".join(r["memory"] for r in results.get("results", []))
-    answerer = Agent(model=model, system_prompt=ANSWER_SYSTEM_PROMPT, callback_handler=None)
     return str(answerer(f"Context:\n{retrieved}\n\nQuestion: {query}"))
 
 

@@ -20,7 +20,16 @@ def get_model():
         from strands import Agent
         from strands.models.ollama import OllamaModel
 
-        model = OllamaModel(host=OLLAMA_HOST, model_id=OLLAMA_MODEL_ID)
+        model = OllamaModel(
+            host=OLLAMA_HOST,
+            model_id=OLLAMA_MODEL_ID,
+            # qwen3.5:4b's <think> reasoning mode can run away without ever
+            # emitting a stop token, burning the whole max_tokens budget on
+            # reasoning and raising MaxTokensReachedException with no real
+            # answer produced (seen in workshop/07-multi-agent/2-graph_loops.py).
+            # Disabled by default for every script that imports get_model().
+            additional_args={"think": False},
+        )
         Agent(model=model, callback_handler=None)("ping")
         return model
     except Exception as e:

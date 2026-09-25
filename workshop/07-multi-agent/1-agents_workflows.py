@@ -9,7 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from model_provider import get_model
 from strands import Agent
-from strands_tools import http_request
+from strands.vended_tools import http_request
 
 model = get_model()
 
@@ -18,8 +18,11 @@ researcher_agent = Agent(
     system_prompt=(
         "You are a Researcher Agent that gathers information from the web. "
         "1. Determine if the input is a research query or factual claim "
-        "2. Use your research tools (http_request) to find relevant information "
-        "3. Include source URLs and keep findings under 500 words"
+        "2. Make AT MOST ONE http_request call to a single relevant URL — "
+        "do not retry or search further if it doesn't return exactly what "
+        "you wanted, work with whatever you get "
+        "3. Include source URLs and keep findings under 500 words. Stop "
+        "after your one tool call and answer directly."
     ),
     callback_handler=None,
     tools=[http_request],
@@ -54,4 +57,4 @@ def run_research_workflow(user_input: str) -> str:
 
 
 if __name__ == "__main__":
-    print(run_research_workflow("The James Webb Space Telescope's main discoveries"))
+    print(run_research_workflow("Fetch https://api.weather.gov/points/38.8894,-77.0352 and summarize the grid info"))

@@ -18,7 +18,9 @@ def test_ollama_success_returns_ollama_model():
         model = model_provider.get_model()
 
         mock_ollama_cls.assert_called_once_with(
-            host=model_provider.OLLAMA_HOST, model_id=model_provider.OLLAMA_MODEL_ID
+            host=model_provider.OLLAMA_HOST,
+            model_id=model_provider.OLLAMA_MODEL_ID,
+            additional_args={"think": False},
         )
         assert model is mock_ollama_cls.return_value
 
