@@ -2,10 +2,10 @@
 
 [![CI](https://github.com/ashishpatel26/aws-community-day-strands-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/ashishpatel26/aws-community-day-strands-workshop/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.14%2B-blue)](https://www.python.org/)
-[![uv](https://img.shields.io/badge/managed%20with-uv-8A2BE2)](https://docs.astral.sh/uv/)
+[![uv](<https://img.shields.io/badge/managed%20with-uv-8A2BE2>)](https://docs.astral.sh/uv/)
 [![Strands Agents](https://img.shields.io/badge/Strands-Agents-orange)](https://strandsagents.com/)
 [![AWS Bedrock](https://img.shields.io/badge/AWS-Bedrock-FF9900?logo=amazonaws&logoColor=white)](https://aws.amazon.com/bedrock/)
-[![Ollama](https://img.shields.io/badge/Ollama-local%20first-000000?logo=ollama&logoColor=white)](https://ollama.ai)
+[![Ollama](<https://img.shields.io/badge/Ollama-local%20first-000000?logo=ollama&logoColor=white>)](https://ollama.ai)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 A hands-on, 4-hour Strands Agents workshop. Build agents locally with Ollama, fall back to Amazon Bedrock with a one-line swap — same agent code either way.
@@ -101,7 +101,7 @@ One Agent Loop at the center. Everything else — tools, models, state, multi-ag
 | 7     | [`workshop/07-multi-agent/`](workshop/07-multi-agent/)         | Workflow, Graph, Swarm                                             |
 | 8     | [`workshop/08-production/`](workshop/08-production/)           | Deployment, meta-tooling, vision, Bedrock swap                     |
 | 9     | [`workshop/09-advanced/`](workshop/09-advanced/)               | Hooks, observability, evaluation, A2A (guardrails: reference only) |
-| 10    | [`workshop/10-project/`](workshop/10-project/)                 | Capstone: full-stack finance research portal (FastAPI + React)    |
+| 10    | [`workshop/10-project/`](workshop/10-project/)                 | Capstone: full-stack finance research portal (FastAPI + React)     |
 
 ## Full facilitator guides
 
@@ -119,11 +119,13 @@ This README is the front door. The guides above are where the actual teaching co
 [`uv`](https://docs.astral.sh/uv/) is the Python package manager this workshop uses — full official instructions at [docs.astral.sh/uv/getting-started/installation](https://docs.astral.sh/uv/getting-started/installation/).
 
 **macOS / Linux:**
+
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 **Windows (PowerShell):**
+
 ```powershell
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
@@ -135,20 +137,25 @@ Verify: `uv --version`
 [Ollama](https://ollama.ai) runs the local model this workshop uses by default — full official instructions and installers at [ollama.com/download](https://ollama.com/download).
 
 **macOS:**
+
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
+
 Or download the `.dmg` from [ollama.com/download](https://ollama.com/download) (requires macOS 14 Sonoma or later).
 
 **Linux:**
+
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
 **Windows (PowerShell):**
+
 ```powershell
 irm https://ollama.com/install.ps1 | iex
 ```
+
 Or download the installer from [ollama.com/download/windows](https://ollama.com/download/windows) (requires Windows 10 or later).
 
 Verify: `ollama --version`, then pull the models used in this workshop (see [Quickstart](#quickstart)).

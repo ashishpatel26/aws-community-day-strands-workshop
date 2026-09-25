@@ -1,5 +1,5 @@
 """Multi-Agent example (Teacher's Assistant) — orchestrator routes to specialist
-sub-agents wrapped as tools. Bedrock primary, Ollama fallback for every agent.
+sub-agents wrapped as tools. Ollama primary, Bedrock fallback for every agent.
 Run: uv run 2-teachers_assistant.py
 """
 

@@ -1,4 +1,4 @@
-"""Structured Output example — Bedrock primary, Ollama fallback.
+"""Structured Output example — Ollama primary, Bedrock fallback.
 
 Agent returns a validated Pydantic object instead of raw text.
 Run: uv run 1-structured_output.py

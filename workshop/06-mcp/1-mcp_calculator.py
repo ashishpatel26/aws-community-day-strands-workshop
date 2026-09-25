@@ -1,9 +1,9 @@
-"""MCP Calculator example — Strands agent + MCP server, Bedrock primary /
-Ollama fallback model. Two halves in one file: run server first (separate
+"""MCP Calculator example — Strands agent + MCP server, Ollama primary /
+Bedrock fallback model. Two halves in one file: run server first (separate
 process), then client.
 
-Terminal 1: uv run 3-mcp_calculator.py server
-Terminal 2: uv run 3-mcp_calculator.py client
+Terminal 1: uv run 1-mcp_calculator.py server
+Terminal 2: uv run 1-mcp_calculator.py client
 """
 
 import sys

@@ -1,5 +1,5 @@
 """File Operations example — natural-language filesystem agent.
-Bedrock primary, Ollama fallback. Run: uv run 1-file_operations.py
+Ollama primary, Bedrock fallback. Run: uv run 1-file_operations.py
 """
 
 import os

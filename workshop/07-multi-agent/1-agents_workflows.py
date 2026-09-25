@@ -1,5 +1,5 @@
 """Agents Workflows example — sequential Researcher -> Analyst -> Writer pipeline.
-Bedrock primary, Ollama fallback. Run: uv run 1-agents_workflows.py
+Ollama primary, Bedrock fallback. Run: uv run 1-agents_workflows.py
 """
 
 import sys

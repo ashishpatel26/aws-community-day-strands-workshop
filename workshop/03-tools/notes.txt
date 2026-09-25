@@ -1,0 +1,76 @@
+Meeting notes
+
+Day 1 - Monday, October 16, 2024
+==================================
+Time: 9:00 AM - 10:30 AM | Location: Conference Room A
+
+Attendees:
+- Jane Smith (Project Manager)
+- John Doe (Development Lead)
+- Sarah Johnson (QA Specialist)
+
+Agenda Items:
+1. Project status review
+2. Sprint planning discussion
+3. Resource allocation for Q4
+
+Key Points Discussed:
+- Development team is on track with the 3 backend modules complete
+- QA needs to be ramped up by Friday to meet testing timeline
+- Sarah will take ownership of integration test scheduling
+- Jane requested additional support from marketing for launch coordination
+
+Action Items:
+- John to finalize API documentation by EOD tomorrow
+- Jane to coordinate with stakeholders on Monday's all-hands meeting
+- Schedule follow-up review meeting for Tuesday at 2 PM
+
+Day 2 - Tuesday, October 17, 2024
+==================================
+Time: 2:00 PM - 3:30 PM | Location: Virtual Meeting (Zoom)
+
+Attendees:
+- Mike Wilson (Design Team Lead)
+- Emily Davis (Frontend Developer)
+- Alex Chen (UX Researcher)
+
+Agenda Items:
+1. UI/UX design review
+2. Accessibility compliance discussion
+3. Mobile responsiveness updates
+
+Key Points Discussed:
+- New dashboard mockups received positive feedback from user testing
+- Accessibility requirements need to be integrated into all new components
+- Emily identified inconsistencies in the color palette across devices
+- Mobile-first approach will be prioritized for Q4 features
+
+Action Items:
+- Mike to create updated design specification document by Wednesday
+- Alex to complete usability research report before Friday
+- All team members to review mobile design files before Thursday's sprint planning
+
+Day 3 - Wednesday, October 18, 2024
+==================================
+Time: 10:00 AM - 11:30 AM | Location: Conference Room B
+
+Attendees:
+- Jessica Brown (Operations Manager)
+- David Lee (Supply Chain Coordinator)
+- Rachel Green (Logistics Specialist)
+
+Agenda Items:
+1. Supply chain status update
+2. New vendor partnership review
+3. Shipping timeline optimization
+
+Key Points Discussed:
+- Current suppliers meeting 95% of delivery targets
+- Two new vendors introduced for next quarter expansion
+- Delivery timelines can be improved by 15% with route optimization
+- Budget approval needed for logistics software upgrade
+
+Action Items:
+- David to submit vendor comparison report by end of week
+- Jessica to finalize budget proposal for management review
+- Schedule procurement team meeting on Thursday morning
